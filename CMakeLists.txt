@@ -110,7 +110,6 @@ target_compile_options(${PROJECT_NAME}
                                  -Wold-style-cast
                                  -Wshadow
                                  -Wweak-vtables
-                                 -Werror
                                  -Wall>
         $<$<C_COMPILER_ID:GNU>:-Waddress
                                -Waggregate-return
@@ -127,7 +126,6 @@ target_compile_options(${PROJECT_NAME}
                                -Wunreachable-code
                                -Wwrite-strings
                                -Wpointer-arith
-                               -Werror
                                -Wall>
        $<$<C_COMPILER_ID:MSVC>:/Wall>
 )
